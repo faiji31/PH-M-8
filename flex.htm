@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            background-color: blueviolet;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 5px;
+        }
+        .section-2{
+            display: flex;
+            gap: 20px;
+            
+        }
+        @media screen and (max-width:576px) {
+            .container{
+              flex-direction: column;
+            }
+            .box{
+                background-color: yellow;
+            }
+            .section-2{
+                flex-direction: column;
+            }
+            .item{
+                background-color: green;
+            }
+        }
+    </style>
+    <title>Responsive Flex</title>
+</head>
+<body>
+    <h2>Flexiable Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit, praesentium non veniam at eos?</p>
+        </div>
+        <div class="box">
+            <h3>2nd Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod magnam cupiditate molestiae itaque odit!</p>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="item">
+            <h3>3rd Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, veritatis sapiente incidunt qui molestias natus.</p>
+        </div>
+        <div class="item">
+            <h3>4th Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium voluptas sunt sint illum sit saepe.</p>
+        </div>
+    </div>
+</body>
+</html>
