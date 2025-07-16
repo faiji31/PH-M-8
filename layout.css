@@ -1,0 +1,67 @@
+.header,
+.nav,
+.sidebar,
+.footer,
+.main,
+.advertisement {
+    background-color: burlywood;
+    border: 2px solid tomato;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.advertisement {
+    grid-area: advertisement;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.liam {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header header header header"
+        " nav main main sidebar"
+        "nav main main advertisement"
+        "footer footer footer footer";
+}
+
+@media screen and (max-width:576px) {
+    .liam {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "advertisement"
+            "footer";
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .liam {
+        grid-template-areas: "header     header  header"
+        "nav        nav      nav"
+        "sidebar     main    main"
+        "advertisemnt footer footer"
+        ;
+    }
+}

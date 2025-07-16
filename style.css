@@ -30,7 +30,7 @@ img{
     }
     
 }
-@media screen and (max-width: 567px) and (max-width:992px) {
+@media screen and (max-width: 576px) and (max-width:992px) {
     .row{
         flex-direction: column;
         height: auto;
