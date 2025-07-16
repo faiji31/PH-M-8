@@ -9,7 +9,7 @@ img{
     margin-bottom: 5px;
 }
 .vertical img{
-   height: calc(100% - 5px)
+   height: calc((100% - 5px)/2)
     
 }
 .row > div{
@@ -19,4 +19,21 @@ img{
     display: grid;
     grid-template-columns: repeat(2,2fr);
     gap: 2px;
+}
+@media screen and (max-width:576px){
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .liam{
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media screen and (max-width: 567px) and (max-width:992px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    
 }
